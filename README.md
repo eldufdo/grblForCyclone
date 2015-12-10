@@ -1,6 +1,9 @@
  GRBL RAMPS 1.4 port  
  By ArSi arsi@arsi.sk  
- 
+
+Modified my mschrock to change default setting to work with Mostly Printed CNC with Mega 2560 and DRV8825 set in 1/32nd step mode. 
+
+
  Modified again by Carlosgs to **support RAMPS and Sanguinololu** without any re-wiring (i.e. if [MarlinForCyclone](https://github.com/carlosgs/MarlinForCyclone) worked straight away, this one will).  
  Pre-configured for [Cyclone PCB Factory v2.X](http://reprap.org/wiki/Cyclone_PCB_Factory).  
 
@@ -13,7 +16,7 @@ How to flash the GRBL firmware
 * If you are using Sanguinololu, [click here](ArduinoIDE_addonForSanguinololu).
 * If you are using CNCshield, [click here](https://github.com/carlosgs/grblForCyclone/tree/grblForCyclone_CNCShield) for a modification of the latest GRBL firmware. Ignore the rest of this page; instead follow the [official installation instructions](https://github.com/grbl/grbl/wiki/Flashing-Grbl-to-an-Arduino).
 
-3) Next, **if you want to modify any default parameters, do so in "[defaults.h](defaults.h)"** (end of the file, below DEFAULTS\_CYCLONE\_2\_1).
+3) Next, **if you want to modify any default parameters, do so in "[defaults.h](defaults.h)"** (end of the file, below DEFAULTS\_MPCNC).
 *IMPORTANT NOTE: When configuring your own parameters, note that GRBL stores every setting into the EEPROM in the first boot and always uses those. If you need to change any hard-coded values here, make sure to uncomment the line settings.c:301 so GRBL re-loads the defaults every time.*  
 
 

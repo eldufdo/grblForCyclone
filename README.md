@@ -1,4 +1,7 @@
- GRBL RAMPS 1.4 port  
+Modified version for our custom MPCNC build 
+---
+
+GRBL RAMPS 1.4 port  
  By ArSi arsi@arsi.sk  
 
 Modified my mschrock to change default setting to work with Mostly Printed CNC with Mega 2560 and DRV8825 set in 1/32nd step mode. 

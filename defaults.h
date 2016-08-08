@@ -29,22 +29,22 @@
 
 #ifdef DEFAULTS_MPCNC
   // Grbl generic default settings. Should work across different machines.
-#define DEFAULT_X_STEPS_PER_MM 200
-#define DEFAULT_Y_STEPS_PER_MM 200
-#define DEFAULT_Z_STEPS_PER_MM 4535.44
+#define DEFAULT_X_STEPS_PER_MM 160
+#define DEFAULT_Y_STEPS_PER_MM 160
+#define DEFAULT_Z_STEPS_PER_MM 5120.00
   #define DEFAULT_X_MAX_RATE 11000.0 // mm/min
   #define DEFAULT_Y_MAX_RATE 11000.0 // mm/min
   #define DEFAULT_Z_MAX_RATE 522.0 // mm/min
-  #define DEFAULT_X_ACCELERATION 400 // 10*60*60 mm/min^2 = 10 mm/sec^2
-  #define DEFAULT_Y_ACCELERATION 400 // 10*60*60 mm/min^2 = 10 mm/sec^2
-  #define DEFAULT_Z_ACCELERATION 55 // 10*60*60 mm/min^2 = 10 mm/sec^2
+  #define DEFAULT_X_ACCELERATION 20000 // 10*60*60 mm/min^2 = 10 mm/sec^2
+  #define DEFAULT_Y_ACCELERATION 20000 // 10*60*60 mm/min^2 = 10 mm/sec^2
+  #define DEFAULT_Z_ACCELERATION 2500 // 10*60*60 mm/min^2 = 10 mm/sec^2
   #define DEFAULT_X_MAX_TRAVEL 1000.0 // mm
   #define DEFAULT_Y_MAX_TRAVEL 1000.0 // mm
   #define DEFAULT_Z_MAX_TRAVEL 200.0 // mm
   #define DEFAULT_STEP_PULSE_MICROSECONDS 10
   #define DEFAULT_STEPPING_INVERT_MASK 0
   #define DEFAULT_DIRECTION_INVERT_MASK ((1<<Y_AXIS)|(1<<Z_AXIS))
-  #define DEFAULT_STEPPER_IDLE_LOCK_TIME 25 // msec (0-254, 255 keeps steppers enabled)
+  #define DEFAULT_STEPPER_IDLE_LOCK_TIME 255 // msec (0-254, 255 keeps steppers enabled)
   #define DEFAULT_STATUS_REPORT_MASK ((BITFLAG_RT_STATUS_MACHINE_POSITION)|(BITFLAG_RT_STATUS_WORK_POSITION))
   #define DEFAULT_JUNCTION_DEVIATION 0.02 // mm
   #define DEFAULT_ARC_TOLERANCE 0.002 // mm

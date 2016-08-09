@@ -1,9 +1,10 @@
-Modified version for our custom MPCNC build 
----
+# Modified version for our custom MPCNC build 
 
-IMPORTANT
-___
-Always clear EEPROM before flash
+##IMPORTANT
+
+**Always clear EEPROM before flash**
+
+---
 
 GRBL RAMPS 1.4 port  
  By ArSi arsi@arsi.sk  
